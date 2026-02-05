@@ -41,6 +41,7 @@ typedef struct ldrhdr {
 	u32 entry;
 } ldrhdr;
 
+// have not tested this
 int lde(char*dir) {
 	int fd = open(dir, O_RDONLY);
 
@@ -62,6 +63,7 @@ int lde(char*dir) {
 	entry();
 }
 
+// have not tested this
 int ldn(u8*mem) {
 	ldrhdr *a = (ldrhdr*)mem;
 
@@ -73,6 +75,7 @@ int ldn(u8*mem) {
 	entry();
 }
 
+// have tested this
 int main(int argc, char **argv) {
 	int e = 1000;
 	int s = 2048;
